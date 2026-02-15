@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- place favicon.png in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.svg">
+    <title>Aurea Finanzas | Haz de cada quincena tu mejor inversión</title>
+
+    <!-- ==== css dependencies start ==== -->
+    <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendors/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="assets/vendors/magnific-popup/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/vendors/slick/css/slick.css">
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <!-- ==== css dependencies end ==== -->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+<script>
+// Bloquear clic derecho
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+// Bloquear algunas teclas (F12, Ctrl+Shift+I/J/C, Ctrl+U)
+document.addEventListener('keydown', function (e) {
+  // F12
+  if (e.key === 'F12') {
+    e.preventDefault();
+  }
+
+  // Ctrl+Shift+I / Ctrl+Shift+J / Ctrl+Shift+C
+  if (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key.toUpperCase())) {
+    e.preventDefault();
+  }
+
+  // Ctrl+U (ver código fuente)
+  if (e.ctrlKey && e.key.toUpperCase() === 'U') {
+    e.preventDefault();
+  }
+});
+</script>
+
+
+<body>
+
+    <!-- ==== scroll bottom to top ==== -->
+    <a href="javascript:void(0)" class="scrollToTop">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+
+    <!-- ==== header start ==== -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/aurea.svg" alt="Logo" class="logo">
+                </a>
+                <div class="navbar-out order-2 order-md-3">
+                    <div class="nav-group-btn">
+                        <a href="https://demo.aureafinanzas.app/cloud" class="button d-none d-sm-block" target="_blank" rel="noreferrer">Comienza Ahora</a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav"
+                        aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle Primary Nav">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-3 order-lg-2 justify-content-center" id="primaryNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="#manual">Manual en video</a>
+                        </li>
+						<li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#funcionalidades">Funcionalidades</a>
+                        </li>
+						
+						<li class="nav-item">
+                            <a class="nav-link" href="#feedback">Feedback</a>
+                        </li>
+                        <li class="nav-item d-block d-sm-none">
+                            <a href="https://demo.aureafinanzas.app/cloud" class="button button--last" target="_blank" rel="noreferrer">Comienza Ahora</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- ==== #header end ==== -->
+
+    <!-- ==== hero section start ==== -->
+    <section class="hero overflow-hidden" id="inicio">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero__content">
+                        <h3 class="text-bg">Haz de cada quincena tu mejor inversión.</h3>
+                        <p class="primary-text">Plataforma web para organizar ingresos, gastos, deudas y patrimonio por quincena, con métricas en tiempo real y proyecciones claras.</p>
+                        <div class="cta-btn">
+                            <a href="https://demo.aureafinanzas.app/download" class="button button--primary" target="_blank" rel="noreferrer">Comienza Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="dir-rtl d-none d-lg-block">
+                        <img src="assets/images/hero-thumb.png" alt="Image" class="max-width-unset">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #hero section end ==== -->
+
+    <!-- ==== demo video section start ==== -->
+    <section class="demo section-space" id="manual">
+        <div class="container">
+            <div class="row align-items-center neutral-row-gutter">
+                <div class="col-lg-5 column-gutter">
+                    <div class="demo__content section-content">
+                        <h5 class="text-bg-two">Video guía</h5>
+                        <h2 class="section-title">Recorrido práctico por Aurea</h2>
+                        <p>En este video podras ver cómo funciona la Plataforma, como registrar tus gastos y demas funcionalidades de <span style="color:#D2A867;">Aurea Finanzas.</span></p>
+                        <ul class="demo__list">
+                            <li>Registra tus ingresos por quincena y tus gastos fijos en minutos.</li>
+                            <li>Lleva el control de gastos hormiga y ve en qué se te va más la plata cada mes.</li>
+                            <li>Controla tus deudas con tabla de amortización y proyecciones de pago.</li>
+                        </ul>
+                        <div class="cta-btn">
+                            <a href="https://demo.aureafinanzas.app/download" class="button button--primary" target="_blank" rel="noreferrer">Comienza Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 column-gutter">
+                    <div class="demo__player">
+                        <div class="demo__frame">
+                            <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="Video de uso Aurea Finanzas" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="demo__note">Reemplaza VIDEO_ID con tu grabación cuando esté disponible o sube un archivo MP4 en este mismo contenedor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #demo video section end ==== -->
+	<!-- ==== about section start ==== -->
+    <section class="about section-space" id="sobre">
+        <div class="container">
+            <div class="row align-items-center neutral-row-gutter">
+                <div class="col-lg-6 column-gutter">
+                    <div class="about__thumbs text-start text-lg-center">
+                        <img src="assets/images/about-thumb.png" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6 column-gutter">
+                    <div class="about__content section-content">
+                        <h5 class="text-bg">Sobre Aurea Finanzas</h5>
+                        <h2 class="section-title">La app para quienes viven sin conocer su presupuesto real</h2>
+                        <p><span style="color:#D2A867;">Aurea Finanzas</span> nace para ayudarte a que dejes de llegar raspando al final de la quincena. 
+							Reúne en un solo lugar tus ingresos, gastos, deudas, activos y gastos hormiga, 
+							y te muestra cómo cambian tu flujo de caja y tu patrimonio con cada decisión diaria.
+						<br>Está pensada para personas que quieren claridad sin complicarse con hojas de cálculo ni términos financieros complejos. 
+							En pocos minutos puedes registrar tu información básica y ver un resumen entendible de tu situación actual.
+						</p>
+                        <div class="cta-btn">
+                            <a href="#manual" class="button button--primary">Ver recorrido en video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #about section end ==== -->
+
+
+    <!-- ==== features section start ==== -->
+    <section class="features section-space" id="funcionalidades">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-6">
+                    <div class="section-header">
+                        <h5 class="text-center text-bg-two">Funcionalidades clave</h5>
+                        <h2 class="section-title text-center secondary">Todo lo que necesitas para gestionar tu quincena</h2>
+                        <p class="text-center">Organiza tu quincena con reportes claros, control de deudas y seguimiento de gastos hormiga para saber siempre en qué está tu plata.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="features__slider">
+                        <div class="features__content">
+                            <div class="features__single">
+                                <div class="features__single-thumb">
+                                    <img src="assets/images/icon/problem.png" alt="Icon">
+                                </div>
+                                <div class="features__single-content text-center">
+                                    <h4>Gastos hormiga</h4>
+                                    <p>Registra consumos diarios pequeños y agrúpalos por categoría para ver qué se come tu quincena.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features__content">
+                            <div class="features__single">
+                                <div class="features__single-thumb">
+                                    <img src="assets/images/icon/computer.png" alt="Icon">
+                                </div>
+                                <div class="features__single-content text-center">
+                                    <h4>Resumen quincenal</h4>
+                                    <p>Visualiza ingresos vs. gastos por quincena y anticipa faltantes antes de que lleguen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features__content">
+                            <div class="features__single">
+                                <div class="features__single-thumb">
+                                    <img src="assets/images/icon/customers.png" alt="Icon">
+                                </div>
+                                <div class="features__single-content text-center">
+                                    <h4>Gestión de deudas</h4>
+                                    <p>Registra tus deudas, simula la tabla de amortización y separa cuánto pagas a capital y a interés</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="features__content">
+                            <div class="features__single">
+                                <div class="features__single-thumb">
+                                    <img src="assets/images/icon/robot.png" alt="Icon">
+                                </div>
+                                <div class="features__single-content text-center">
+                                    <h4>Automatiza gastos</h4>
+                                    <p>Clona tus gastos recurrentes por mes para no tener que registrarlos uno a uno.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="cta-btn-space slider__btns">
+                        <button class="slider-btn prev-features-item">
+                            <i class="fa-solid fa-arrow-left-long"></i>
+                        </button>
+                        <button class="slider-btn next-features-item">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #features section end ==== -->
+	<!-- ==== feedback section start ==== -->
+    <section class="feedback section-space" id="feedback">
+	  <div class="container">
+		<div class="row align-items-center neutral-row-gutter">
+		  <div class="col-lg-6 column-gutter">
+			<div class="feedback__content section-content">
+			  <h5 class="text-bg">Feedback</h5>
+			  <h2 class="section-title">Ayúdanos a mejorar Aurea</h2>
+			  <p>¿Tienes ideas, comentarios o te gustaría ver nuevas funcionalidades?</p>
+			  <p>Escríbenos y cuéntanos cómo Aurea podría ayudarte aún más con tu dinero.</p>
+
+			  <div class="cta-btn">
+				<a href="mailto:giocasti2115@gmail.com?subject=Feedback%20Aurea%20Finanzas"
+				   class="button button--primary">
+				  Enviar feedback por correo
+				</a>
+			  </div>
+			</div>
+		  </div>
+		  <div class="col-lg-6 column-gutter">
+			<div class="about__thumbs text-start text-lg-center">
+				<img src="assets/images/company-thumb.png" alt="Image">
+			</div>
+         </div>
+		</div>
+	  </div>
+	</section>
+
+	<!-- ==== feedback section start ==== -->
+    
+
+    <!-- ==== skill section start ==== -->
+    <section class="skill section-space overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center neutral-row-gutter">
+                <div class="col-lg-6 column-gutter">
+                    <div class="section-content skill__content">
+                        <h5 class="text-bg-two">Nuestra especialidad</h5>
+                        <h2>Lo que Aurea te ayuda a mejorar</h2>
+                        <p>Combinamos una vista quincenal de tus finanzas con métricas simples para que tomes decisiones rápidas. 
+							Aurea te acompaña en tres frentes clave: cuidar tu quincena, reducir deudas y frenar los gastos hormiga.</p>
+                        <div class="skill__bar">
+                            <div class="skill__bar-single text-center">
+                                <div class="skill__bar-box">
+                                    <svg height="140" width="140">
+                                        <circle cx="70" cy="70" r="65" stroke="#EAA240" stroke-width="5"
+                                        fill="transparent"></circle>
+                                        <circle cx="70" cy="70" r="65" stroke="#003ABB" stroke-width="5"
+                                            fill="transparent" data-dasharray="460" />
+                                    </svg>
+                                    <h5 class="text-bg-two"><span class="counter-number">85</span> %</h5>
+                                </div>
+                                <h6>Control de tu salario</h6>
+                            </div>
+                            <div class="skill__bar-single text-center">
+                                <div class="skill__bar-box">
+                                    <svg height="140" width="140">
+                                        <circle cx="70" cy="70" r="65" stroke="#EAA240" stroke-width="5"
+                                        fill="transparent"></circle>
+                                        <circle cx="70" cy="70" r="65" stroke="#003ABB" stroke-width="5"
+                                            fill="transparent" data-dasharray="400" />
+                                    </svg>
+                                    <h5 class="text-bg-two"><span class="counter-number">70</span> %</h5>
+                                </div>
+                                <h6>Reducción de deudas</h6>
+                            </div>
+                            <div class="skill__bar-single text-center">
+                                <div class="skill__bar-box">
+                                    <svg height="140" width="140">
+                                        <circle cx="70" cy="70" r="65" stroke="#EAA240" stroke-width="5"
+                                        fill="transparent"></circle>
+                                        <circle cx="70" cy="70" r="65" stroke="#003ABB" stroke-width="5"
+                                            fill="transparent" data-dasharray="520" />
+                                    </svg>
+                                    <h5 class="text-bg-two"><span class="counter-number">90</span>%</h5>
+                                </div>
+                                <h6>Gastos hormiga</h6>
+                            </div>
+                        </div>
+                        <div class="cta-btn">
+                            <a href="https://demo.aureafinanzas.app/cloud" class="button" target="_blank" rel="noreferrer">Comienza Ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 column-gutter order-first order-lg-last">
+                    <div class="skill__thumb">
+                        <img src="assets/images/skill-thumb.png" alt="Image" class="max-width-unset">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==== #skill section end ==== -->
+	
+	<!-- ==== footer section start ==== -->
+	<footer class="footer section-space-top">
+	  <div class="container">
+		<div class="row neutral-row-gutter">
+		  <!-- Columna 1: logo solo -->
+		  <div class="col-lg-2 col-md-3 column-gutter">
+			<div class="footer__single">
+			  <img src="assets/images/logo.png"
+				   alt="Aurea Finanzas" class="footer-logo" />
+			</div>
+		  </div>
+
+		  <!-- Columna 2: descripción corta -->
+		  <div class="col-lg-4 col-md-9 column-gutter">
+			<div class="footer__single">
+			  <p>
+				Aurea Finanzas es un proyecto personal de GioCasti Tech enfocado en ayudar a personas de Colombia
+				a tomar mejores decisiones con su dinero, quincena a quincena.
+			  </p>
+			</div>
+		  </div>
+
+		  <!-- Columna 3: enlaces -->
+		  <div class="col-lg-3 col-md-6 column-gutter">
+			<div class="footer__single">
+			  <h5>Enlaces útiles</h5>
+			  <ul class="footer__links">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#funcionalidades">Funcionalidades</a></li>
+				<li><a href="#manual">Manual en video</a></li>
+				<li><a href="#planes">Planes</a></li>
+			  </ul>
+			</div>
+		  </div>
+
+		  <!-- Columna 4: contacto -->
+		  <div class="col-lg-3 col-md-6 column-gutter">
+			<div class="footer__single">
+			  <h5>Contacto</h5>
+			  <ul class="footer__links">
+				<li><a href="mailto:giocasti2115@gmail.com">giocasti2115@gmail.com</a></li>
+				<li><span>Bogotá, Colombia</span></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="copyright">
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-6 order-last order-lg-first">
+			  <p>Copyright &copy;2026 <span style="color:#D2A867;">Aurea Finanzas</span>. Un proyecto de GioCasti Tech.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</footer>
+	<!-- ==== #footer section end ==== -->
+
+
+
+    <!-- ==== js dependencies start ==== -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendors/jquery/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="assets/vendors/magnific-popup/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/vendors/slick/js/slick.js"></script>
+    <script src="assets/vendors/apex/apexcharts.min.js"></script>
+    <script src="assets/vendors/wow/wow.min.js"></script>
+<script src="assets/vendors/viewport/viewport.jquery.js"></script>
+    <script src="assets/vendors/waypoint-js/waypoints.js"></script>
+    <script src="assets/vendors/counter-up/counter-up.js"></script>
+    <!-- ==== js dependencies end ==== -->
+
+    <!-- plugins js -->
+    <script src="assets/js/plugins.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
